@@ -1,25 +1,21 @@
-import React from 'react'
+import {React, useState} from 'react'
 
 function ClassOptions(){
     function handleSubmit(e) {
       e.preventDefault();
     }
-function Choices(props){
-  return <option value="">{props.name}</option> 
-} 
+const [characterClass, setCharacterClass]= useState("")
 return (
 <div>
   <form>
     <label>Character Class:</label>
-      <select>
-        <Choices name="-------"/>
-        <Choices name="Tank"/>
-        <Choices name="Mage"/>
-        <Choices name="Rogue"/>
-        <Choices name="Archer"/>
-        <Choices name="Healer"/>
+      <select onChange={(e)=>setCharacterClass(e.target.value)} id= "class">
+        <option value="-------">------</option>
+        <option value="Tank">Tank</option>
+        <option value="Mage">Mage</option>
+        <option value="Healer">Healer</option>
+        <option value="Rogue">Rogue</option>
       </select>
-        <button type="submit" onClick={handleSubmit}>Submit</button>
   </form>
 </div>
 )
