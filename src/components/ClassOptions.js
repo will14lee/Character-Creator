@@ -1,10 +1,8 @@
 import {React, useState} from 'react'
 
 function ClassOptions(){
-    function handleSubmit(e) {
-      e.preventDefault();
-    }
 const [characterClass, setCharacterClass]= useState("")
+console.log(characterClass)
 return (
 <div>
   <form>

@@ -1,10 +1,10 @@
-const NavBar= (props) => {
+const NavBar= ({aboutPages}) => {
     return (
         <nav>
             <ul>
-                <a href="#"> {props.aboutPages.Home}    </a> 
-                <a href="#"> {props.aboutPages.Info}    </a> 
-                <a href="#"> {props.aboutPages.Character}</a>
+                <a href="http://localhost:3000/"> {aboutPages.Home}    </a> 
+                <a href="http://localhost:3000/"> {aboutPages.Info}    </a> 
+                <a href="http://localhost:3000/"> {aboutPages.Character}</a>
             </ul>
         </nav>
     )

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom'
+// import ReactDom from 'react-dom'
 import NavBar from './components/NavBar';
 import './App.css';
 import Title from './components/Title';
@@ -14,6 +14,11 @@ function App() {
     Info: "Information",
     Character: "Created Characters"
   }
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log("You've submitted the form!")
+  }
+
 return (
     <div className="App">
       <NavBar aboutPages={ aboutPages }/>
@@ -21,7 +26,7 @@ return (
       <ClassOptions/>
       {/* <Table/> */}
       <Skills/>
-      <About/>
+      <About handleSubmit={ handleSubmit }/>
     </div>
   );
 }
