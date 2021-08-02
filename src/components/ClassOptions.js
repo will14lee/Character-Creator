@@ -1,14 +1,12 @@
-import {React, useState} from 'react'
+import {React} from 'react'
 
-function ClassOptions(){
-const [characterClass, setCharacterClass]= useState("")
-console.log(characterClass)
+function ClassOptions({characterChange}){
 return (
 <div>
   <form>
     <label>Character Class:</label>
-      <select onChange={(e)=>setCharacterClass(e.target.value)} id= "class">
-        <option value="-------">------</option>
+      <select onChange={(e)=>characterChange(e.target.value)} id= "class">
+        <option value="-------"> ------ </option>
         <option value="Tank">Tank</option>
         <option value="Mage">Mage</option>
         <option value="Healer">Healer</option>

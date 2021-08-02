@@ -1,78 +1,19 @@
 {
   "Characters": [
     {
-      "Name": "Cain",
+      "Name": "William",
       "Class": "Tank",
-      "HP": "20",
-      "MP": "6",
-      "ATK": "14",
-      "DEF": "19",
-      "MATK": "7",
-      "MDEF": "18",
-      "AGI": "8",
-      "LUCK": "8",
+      "Stats": {
+        "HP": 35,
+        "MP": 15,
+        "ATK": 10,
+        "DEF": 10,
+        "MATK": 10,
+        "MDEF": 5,
+        "AGI": 10,
+        "LUCK": 5
+      },
+      "Information": "I like to eat",
       "id": 1
-    },
-    {
-      "Name": "Shona",
-      "Class": "Rogue",
-      "HP": "14",
-      "MP": "8",
-      "ATK": "18",
-      "DEF": "8",
-      "MATK": "6",
-      "MDEF": "7",
-      "AGI": "20",
-      "LUCK": "19",
-      "id": 2
-    },    {
-      "Name": "Vivian",
-      "Class": "Mage",
-      "HP": "8",
-      "MP": "19",
-      "ATK": "7",
-      "DEF": "6",
-      "MATK": "20",
-      "MDEF": "18",
-      "AGI": "8",
-      "LUCK": "14",
-      "id": 3
-    },    {
-      "Name": "Simo",
-      "Class": "Archer",
-      "HP": "12",
-      "MP": "6",
-      "ATK": "19",
-      "DEF": "10",
-      "MATK": "8",
-      "MDEF": "7",
-      "AGI": "20",
-      "LUCK": "18",
-      "id": 4
-    },    {
-      "Name": "Hailis",
-      "Class": "Healer",
-      "HP": "14",
-      "MP": "20",
-      "ATK": "6",
-      "DEF": "8",
-      "MATK": "10",
-      "MDEF": "16",
-      "AGI": "11",
-      "LUCK": "15",
-      "id": 5
-    },    {
-      "Name": "g o b",
-      "Class": "g o b l i n",
-      "HP": "1",
-      "MP": "0",
-      "ATK": "75",
-      "DEF": "1",
-      "MATK": "0",
-      "MDEF": "0",
-      "AGI": "1",
-      "LUCK": "100",
-      "id": 5
-    }
-  ]
+    }  ]
 }

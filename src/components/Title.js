@@ -1,15 +1,18 @@
-import React, {useState} from 'react'
+import React from 'react'
 
-function Title(){
+
+function Title({yourName, setYourName}){
     function handleSubmit(e) {
         e.preventDefault();
       }
-      const [yourName, setYourName]= useState("")
    return(
     <div>
-        <h1>Character Creator</h1>
         <h2>Create Your Ideal Character!</h2>
-        <p>Your Hero's Name: <input onChange={(e)=>setYourName(e.target.value)} value={ yourName} placeholder="Clark"></input><input type="submit" onClick={handleSubmit}></input></p>
+        <p>Your Hero's Name: 
+            <input onChange={(e)=>setYourName(e.target.value)} 
+            value={ yourName } placeholder="Clark"/>
+            <input type="submit" onClick={handleSubmit}/>
+        </p>
     </div>
    ) 
 }

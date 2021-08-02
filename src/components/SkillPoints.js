@@ -1,19 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 
-const PlusMinusStat = () => {
-    let [skillPoint, setSkillPoint] = useState(100);
-    let [statPoint, setStatPoint] = useState(
-        {
-            HP: 0,
-            MP: 0,
-            ATK: 0,
-            DEF: 0,
-            MATK: 0,
-            MDEF: 0,
-            AGI: 0,
-            LUCK: 0
-        }
-    )
+const PlusMinusStat = ({statPoint, setStatPoint, skillPoint, setSkillPoint}) => {
     function minus(stat){
         if(statPoint[stat]<=0){
             return alert("You cannot go below 0!")
